@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/src/AllIsWell.Api/appsettings.json
+/src/AllIsWell.Api/appsettings.Development.json
+/src/AllIsWell.Api/Properties/launchSettings.json
