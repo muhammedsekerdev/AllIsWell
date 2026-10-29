@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/AllIsWell.Api/AllIsWell.Api.csproj" />
+    <Project Path="src/AllIsWell.Shared.Kernel/AllIsWell.Shared.Kernel.csproj" />
   </Folder>
 </Solution>
