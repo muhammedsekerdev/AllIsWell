@@ -2,5 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/AllIsWell.Api/AllIsWell.Api.csproj" />
     <Project Path="src/AllIsWell.Shared.Kernel/AllIsWell.Shared.Kernel.csproj" />
+    <Project Path="src/AllIsWell.Users.Domain/AllIsWell.Users.Domain.csproj" />
+    <Project Path="src/AllIsWell.Users.Infrastructure/AllIsWell.Users.Infrastructure.csproj" />
   </Folder>
 </Solution>

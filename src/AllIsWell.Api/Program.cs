@@ -1,3 +1,5 @@
+using AllIsWell.Users.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,6 +13,8 @@ var connectionString = builder.Configuration.GetConnectionString("Default")
 
 builder.Services.AddHealthChecks()
     .AddNpgSql(connectionString);
+
+builder.Services.AddUsersInfrastructure(connectionString);
 
 var app = builder.Build();
 
