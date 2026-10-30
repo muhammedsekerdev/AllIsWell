@@ -1,4 +1,7 @@
+using AllIsWell.Users.Application.Abstractions;
 using AllIsWell.Users.Infrastructure.Database;
+using AllIsWell.Users.Infrastructure.Repositories;
+using AllIsWell.Users.Infrastructure.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +21,10 @@ public static class DependencyInjection
 
             options.UseSnakeCaseNamingConvention();
         });
+
+        services.AddScoped<IUnitOfWork>(serviceProvider => serviceProvider.GetRequiredService<UsersDbContext>());
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddSingleton<IPasswordHasher, PasswordHasher>();
 
         return services;
     }

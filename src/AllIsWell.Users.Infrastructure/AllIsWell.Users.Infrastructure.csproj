@@ -2,10 +2,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AllIsWell.Users.Domain\AllIsWell.Users.Domain.csproj" />
+    <ProjectReference Include="..\AllIsWell.Users.Application\AllIsWell.Users.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="EFCore.NamingConventions" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="10.0.14" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
   </ItemGroup>
 

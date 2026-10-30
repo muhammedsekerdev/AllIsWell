@@ -1,9 +1,10 @@
+using AllIsWell.Users.Application.Abstractions;
 using AllIsWell.Users.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace AllIsWell.Users.Infrastructure.Database;
 
-public sealed class UsersDbContext : DbContext
+public sealed class UsersDbContext : DbContext, IUnitOfWork
 {
     public const string Schema = "users";
 

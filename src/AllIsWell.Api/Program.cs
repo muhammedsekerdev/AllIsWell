@@ -1,3 +1,4 @@
+using AllIsWell.Users.Application;
 using AllIsWell.Users.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ var connectionString = builder.Configuration.GetConnectionString("Default")
 builder.Services.AddHealthChecks()
     .AddNpgSql(connectionString);
 
+builder.Services.AddUsersApplication();
 builder.Services.AddUsersInfrastructure(connectionString);
 
 var app = builder.Build();

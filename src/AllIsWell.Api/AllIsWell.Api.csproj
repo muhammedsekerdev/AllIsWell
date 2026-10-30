@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AllIsWell.Users.Infrastructure\AllIsWell.Users.Infrastructure.csproj" />
+    <ProjectReference Include="..\AllIsWell.Users.Application\AllIsWell.Users.Application.csproj" />
   </ItemGroup>
 
 </Project>
